@@ -1,0 +1,95 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+
+body{ 
+    font-size: 1em;
+    font-family: 'Raleway', sans-serif;
+    background-color: #edf2fb;
+}
+
+a{
+    color: black;
+    text-decoration:none;
+}
+
+nav{
+    background: linear-gradient(to top, #b7094c 25%, #09b774 90%);
+    height: 722px;
+    position: relative;
+    width: 290px;
+    left: -290px;
+    transition: all .5s;
+}
+
+li a{
+    display: block;
+    padding: 25px 15px;
+    margin: 10px;
+    text-align: center;
+}
+
+
+img{
+    width: 50px;
+}
+
+input[type="checkbox"]{
+    display:none;
+}
+
+input[type="checkbox"]:checked ~ nav{
+    transform:translateX(290px);
+}
+
+label img{
+    margin-top: 670px;
+    margin-left: 35px;
+    position: absolute;
+    z-index: 1;
+}
+
+/*Formatação*/
+
+#menu{
+    position:absolute;
+    float: left;
+    height: 100%;
+}
+/*.menu_lateral{
+    text-align: center;
+    padding-block-start: 450px;
+}*/
+
+.principal{
+    float: right;
+    position: relative;
+    height: 472px;
+    width: 87%;
+    text-indent: 5%;
+    padding-block-start: 250px;
+    font-size: 45px;
+    color: black;
+    z-index: -1;
+}
+
+.elementos{
+    padding: 5px 25px 0px 0px;
+    height: 35px;
+}
+
+/*
+.perfil{
+    margin: auto;
+    float:center;
+}
+*/
+
+/*Geral*/
+
+p{
+    font-size: 24px;
+    padding-top:15px;
+    text-indent: 3%;
+}
